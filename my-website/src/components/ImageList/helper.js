@@ -9,58 +9,60 @@ import chibi from '@site/static/Images/tuliblu/Xolo_2.png';
 import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png'
 
 export const itemData = [
-    {
-      img: scuffGrem,
-      title: 'Scuff Gremlin',
-      author: '@KINGBumby',
-      // https://x.com/KINGBumby
-    },
-    {
-      img: kaguraMels,
-      title: 'kaguraMels',
-      author: '@suamingVT',
-      // https://x.com/suamingVT
-    },
-    {
-      img: sakuraMels,
-      title: 'Sakura Mels',
-      author: '@KingofDawn0',
-      // https://x.com/KingofDawn0
-    },
-    {
-      img: tangoWithSol,
-      title: 'Ice cream so sweet, it makes my heart dance',
-      author: '@WaNN',
-    },
-    {
-      img: falling,
-      title: 'Falling for Ice Cream',
-      author: '@Makishupy',
-      featured: true,
-      // https://x.com/Makishupy
-    },
-    {
-      img: reactive,
-      title: 'Official PNGtuber',
-      author: '@funayfunay',
-      // https://x.com/funayfunay
-    },
-    {
-      img: fourPanel,
-      title: 'Your Honor This is a Denny\'s',
-      author: '@CrManzana',
-      // https://x.com/CrManzana
-    },
-    {
-      img: chibi,
-      title: 'Chibi~',
-      author: '@tuliblu',
-      // https://x.com/tuliblu/status/1805303849193742721
-    },
-    {
-      img: dawnling,
-      title: 'Dawnling',
-      author: '@MelsMustScream',
-      // https://x.com/MelsMustScream
-    },
-  ];
+  {
+    img: chibi,
+    title: 'Chibi~',
+    artist: '@tuliblu',
+    artistWebsite: 'https://x.com/tuliblu/status/1805303849193742721'
+  },
+  {
+    img: kaguraMels,
+    title: 'kaguraMels',
+    artist: '@suamingVT',
+    artistWebsite: 'https://x.com/suamingVT'
+  },
+  {
+    img: falling,
+    title: 'Falling for Ice Cream',
+    artist: '@Makishupy',
+    featured: true,
+    artistWebsite: 'https://x.com/Makishupy'
+  },
+  {
+    img: scuffGrem,
+    title: 'Scuff Gremlin',
+    artist: '@KINGBumby',
+    artistWebsite: 'https://x.com/KINGBumby',
+    description: 'This is an example of a description text',
+  },
+  {
+    img: fourPanel,
+    title: 'Your Honor This is a Denny\'s',
+    artist: '@CrManzana',
+    artistWebsite: 'https://x.com/CrManzana'
+  },
+  {
+    img: reactive,
+    title: 'Official PNGtuber',
+    artist: '@funayfunay',
+    artistWebsite: 'https://x.com/funayfunay'
+  },
+  {
+    img: sakuraMels,
+    title: 'Sakura Mels',
+    artist: '@KingofDawn0',
+    artistWebsite: 'https://x.com/KingofDawn0'
+  },
+  {
+    img: tangoWithSol,
+    title: 'Ice cream so sweet, it makes my heart dance',
+    artist: '@WaNN',
+  },
+
+  {
+    img: dawnling,
+    title: 'Dawnling',
+    artist: '@MelsMustScream',
+    artistWebsite: 'https://x.com/MelsMustScream'
+  },
+];
