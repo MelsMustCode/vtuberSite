@@ -1,5 +1,6 @@
 /* CrManzana */
 import fourPanel from '@site/static/Images/CrManzana/SPOILER_xolomon4k.png';
+import fourPanelSketch from '@site/static/Images/CrManzana/SPOILER_qST2l2_0.jpg';
 /* funayfunay */
 import reactive from '@site/static/Images/funayfunay/melscomm_IDLE.png';
 import reactiveTalk from '@site/static/Images/funayfunay/melscomm_TALK.png';
@@ -21,8 +22,12 @@ import tangoWithSol from '@site/static/Images/WaNN/Sol_and_Mel.png';
 import chibi from '@site/static/Images/tuliblu/Xolo_2.png';
 /* MelsMustScream */
 import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png';
+import persona from '@site/static/Images/MelsMustScream/shenanigans.png';
+import personaVideo from '@site/static/Images/MelsMustScream/persona5_v1.mp4';
 /* kyung.mp3 */
 import chibiTrio from '@site/static/Images/kyung_mp3/chibiTrio.png';
+/* franbolt */
+import melsDio from '@site/static/Images/franbolt/SPOILER_2.png'
 
 export const itemData = [
   {
@@ -56,7 +61,7 @@ export const itemData = [
   },
   {
     img: fourPanel,
-    imgVariants: [fourPanel],
+    imgVariants: [fourPanel, fourPanelSketch],
     title: 'Your Honor This is a Denny\'s',
     artist: '@CrManzana',
     artistWebsite: 'https://x.com/CrManzana'
@@ -102,4 +107,18 @@ export const itemData = [
     artist: '@MelsMustScream',
     artistWebsite: 'https://x.com/MelsMustScream'
   },
+  {
+    img: persona,
+    imgVariants: [persona, personaVideo],
+    title: 'Persona!',
+    artist: 'Multiple Artist',
+    description: 'Taking the original image by suamingVT, Seedy and a friend did some editing and voila'
+  },
+  {
+    img: melsDio,
+    imgVariants: [melsDio],
+    title: 'But it was ME, DIO!',
+    artist: '@franbolt',
+    artistWebsite: 'https://www.twitch.tv/franbolt'
+  }
 ];
