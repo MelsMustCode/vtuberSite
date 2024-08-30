@@ -20,7 +20,9 @@ import tangoWithSol from '@site/static/Images/WaNN/Sol_and_Mel.png';
 /* tuliblu */
 import chibi from '@site/static/Images/tuliblu/Xolo_2.png';
 /* MelsMustScream */
-import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png'
+import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png';
+/* kyung.mp3 */
+import chibiTrio from '@site/static/Images/kyung_mp3/chibiTrio.png';
 
 export const itemData = [
   {
@@ -72,6 +74,13 @@ export const itemData = [
     title: 'Sakura Mels',
     artist: '@KingofDawn0',
     artistWebsite: 'https://x.com/KingofDawn0'
+  },
+  {
+    img: chibiTrio,
+    imgVariants: [chibiTrio],
+    title: 'Trio Shenanigans',
+    artist: 'kyung.mp3',
+    artistWebsite: 'https://www.instagram.com/kyung.mp3/',
   },
   {
     img: tangoWithSol,
