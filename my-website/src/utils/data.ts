@@ -1,38 +1,40 @@
-/* CrManzana */
-import fourPanel from '@site/static/Images/CrManzana/SPOILER_xolomon4k.png';
-import fourPanelSketch from '@site/static/Images/CrManzana/SPOILER_qST2l2_0.jpg';
-/* funayfunay */
-import reactive from '@site/static/Images/funayfunay/melscomm_IDLE.png';
-import reactiveTalk from '@site/static/Images/funayfunay/melscomm_TALK.png';
-/* KingBumby */
-import scuffGrem from '@site/static/Images/KingBumby/scuffgremlin_melsmustscream.png';
-import scuffGremTalk from '@site/static/Images/KingBumby/scuffgremlin_melsmustscream_talk_open.png';
-/* KingofDawn0 */
-import sakuraMels from '@site/static/Images/KingofDawn0/background.PNG';
-import sakuraMelsNoBackground from '@site/static/Images/KingofDawn0/no_background.PNG';
-/* Makishupy */
-import falling from '@site/static/Images/Makishupy/whatsAppImage.jpeg';
-import originalModel from '@site/static/Images/Makishupy/closed_IMG_2370.png';
-import originalModelOpenMouth from '@site/static/Images/Makishupy/open_IMG_2371.png';
-import animatedSundae from '@site/static/Images/Makishupy/Ice_cream_Animation.mp4';
-/* suamingVT */
-import kaguraMels from '@site/static/Images/suamingVT/mel_kagura_bachi.png';
-/* WaNN */
-import tangoWithSol from '@site/static/Images/WaNN/Sol_and_Mel.png';
-import tangoWithSolChibi from '@site/static/Images/WaNN/Sol_and_Mel_chibi.png';
-/* tuliblu */
-import chibi from '@site/static/Images/tuliblu/Xolo_2.png';
-/* MelsMustScream */
-import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png';
-import persona from '@site/static/Images/MelsMustScream/shenanigans.png';
-import personaVideo from '@site/static/Images/MelsMustScream/persona5_v1.mp4';
-import sundae from '@site/static/Images/MelsMustScream/1112.png'
-/* kyung.mp3 */
-import chibiTrio from '@site/static/Images/kyung_mp3/chibiTrio.png';
-/* franbolt */
-import melsDio from '@site/static/Images/franbolt/SPOILER_2.png'
+import { ImageResource } from '../types/imageTypes.js';
 
-export const itemData = [
+/* CrManzana */
+const fourPanel = 'Images/CrManzana/SPOILER_xolomon4k.png';
+const fourPanelSketch = 'Images/CrManzana/SPOILER_qST2l2_0.jpg';
+/* funayfunay */
+const reactive = 'Images/funayfunay/melscomm_IDLE.png';
+const reactiveTalk = 'Images/funayfunay/melscomm_TALK.png';
+/* KingBumby */
+const scuffGrem = 'Images/KingBumby/scuffgremlin_melsmustscream.png';
+const scuffGremTalk = 'Images/KingBumby/scuffgremlin_melsmustscream_talk_open.png';
+/* KingofDawn0 */
+const sakuraMels = 'Images/KingofDawn0/background.PNG';
+const sakuraMelsNoBackground = 'Images/KingofDawn0/no_background.PNG';
+/* Makishupy */
+const falling = 'Images/Makishupy/whatsAppImage.jpeg';
+const originalModel = 'Images/Makishupy/closed_IMG_2370.png';
+const originalModelOpenMouth = 'Images/Makishupy/open_IMG_2371.png';
+const animatedSundae = 'Images/Makishupy/Ice_cream_Animation.mp4';
+/* suamingVT */
+const kaguraMels = 'Images/suamingVT/mel_kagura_bachi.png';
+/* WaNN */
+const tangoWithSol = 'Images/WaNN/Sol_and_Mel.png';
+const tangoWithSolChibi = 'Images/WaNN/Sol_and_Mel_chibi.png';
+/* tuliblu */
+const chibi = 'Images/tuliblu/Xolo_2.png';
+/* MelsMustScream */
+const dawnling = 'Images/MelsMustScream/Dawnling.png';
+const persona = 'Images/MelsMustScream/shenanigans.png';
+const personaVideo = 'Images/MelsMustScream/persona5_v1.mp4';
+const sundae = 'Images/MelsMustScream/1112.png'
+/* kyung.mp3 */
+const chibiTrio = 'Images/kyung_mp3/chibiTrio.png';
+/* franbolt */
+const melsDio = 'Images/franbolt/SPOILER_2.png'
+
+const imageData: Array<ImageResource> = [
   {
     img: chibi,
     imgVariants: [chibi],
@@ -140,3 +142,5 @@ export const itemData = [
     artistWebsite: 'https://x.com/Makishupy'
   }
 ];
+
+export { imageData };

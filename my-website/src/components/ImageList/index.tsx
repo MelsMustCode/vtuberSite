@@ -5,8 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
-import { itemData } from './helper'
-import { ImageResource } from '../types/imageTypes';
+import { imageData } from '../../utils/data'
+import { ImageResource } from '../../types/imageTypes';
 import { ImageDetailsDialog } from '../ImageDialogue';
 import Link from '@docusaurus/Link';
 
@@ -17,7 +17,7 @@ export default function TitlebarImageList() {
     <div>
       {currentImage ? <ImageDetailsDialog image={currentImage} onClose={() => setCurrentImage(null)}/> : <></>}
       <ImageList cols={3} sx={{ width: "100%", height: "100%" }}>
-        {itemData.map((item) => (
+        {imageData.map((item) => (
           <ImageListItem key={item.img}>
             <img
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
