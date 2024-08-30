@@ -14,16 +14,19 @@ import sakuraMelsNoBackground from '@site/static/Images/KingofDawn0/no_backgroun
 import falling from '@site/static/Images/Makishupy/whatsAppImage.jpeg';
 import originalModel from '@site/static/Images/Makishupy/closed_IMG_2370.png';
 import originalModelOpenMouth from '@site/static/Images/Makishupy/open_IMG_2371.png';
+import animatedSundae from '@site/static/Images/Makishupy/Ice_cream_Animation.mp4';
 /* suamingVT */
 import kaguraMels from '@site/static/Images/suamingVT/mel_kagura_bachi.png';
 /* WaNN */
 import tangoWithSol from '@site/static/Images/WaNN/Sol_and_Mel.png';
+import tangoWithSolChibi from '@site/static/Images/WaNN/Sol_and_Mel_chibi.png';
 /* tuliblu */
 import chibi from '@site/static/Images/tuliblu/Xolo_2.png';
 /* MelsMustScream */
 import dawnling from '@site/static/Images/MelsMustScream/Dawnling.png';
 import persona from '@site/static/Images/MelsMustScream/shenanigans.png';
 import personaVideo from '@site/static/Images/MelsMustScream/persona5_v1.mp4';
+import sundae from '@site/static/Images/MelsMustScream/1112.png'
 /* kyung.mp3 */
 import chibiTrio from '@site/static/Images/kyung_mp3/chibiTrio.png';
 /* franbolt */
@@ -89,7 +92,7 @@ export const itemData = [
   },
   {
     img: tangoWithSol,
-    imgVariants: [tangoWithSol],
+    imgVariants: [tangoWithSol, tangoWithSolChibi],
     title: 'Ice cream so sweet, it makes my heart dance',
     artist: '@WaNN',
   },
@@ -120,5 +123,20 @@ export const itemData = [
     title: 'But it was ME, DIO!',
     artist: '@franbolt',
     artistWebsite: 'https://www.twitch.tv/franbolt'
+  },
+  {
+    img: sundae,
+    imgVariants: [sundae],
+    title: 'A Sweet Start',
+    artist: '@MelsMustScream',
+    artistWebsite: 'https://x.com/MelsMustScream',
+    description: 'The original channel logo!'
+  },
+  {
+    img: animatedSundae,
+    imgVariants: [animatedSundae],
+    title: 'Animated Sundae',
+    artist: '@Makishupy',
+    artistWebsite: 'https://x.com/Makishupy'
   }
 ];
