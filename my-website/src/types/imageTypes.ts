@@ -8,4 +8,5 @@ export interface ImageResource {
   description?: string;
   cols?: number;
   rows?: number;
+  type?: string;
 }

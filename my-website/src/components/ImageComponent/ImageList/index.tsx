@@ -9,6 +9,7 @@ import { imageData } from '../../../data/data'
 import { ImageResource } from '../../../types/imageTypes';
 import { ImageDetailsDialog } from '../ImageDialogue';
 import Link from '@docusaurus/Link';
+import { CardMedia } from '@mui/material';
 
 function srcset(image: string, size: number, rows = 1, cols = 1) {
   return {
@@ -47,12 +48,13 @@ export default function TitlebarImageList() {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            { !item.img.includes('mp4') && <img
+            {(item.type === 'video') &&
+              <CardMedia component={item.type} image={item.img} autoPlay  /> 
+             || <img
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
             />}
-            { item.img.includes('mp4') && <video autoPlay src={item.img} type="video/mp4"  />}
             <ImageListItemBar
               title={item.title}
               subtitle={<Link href={item.artistWebsite}>{item.artist}</Link>}

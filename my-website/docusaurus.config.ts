@@ -102,8 +102,8 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} MelsMustScream, Inc. Built with Docusaurus.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.dracula,
+      darkTheme: prismThemes.github,
     },
   } satisfies Preset.ThemeConfig,
 };

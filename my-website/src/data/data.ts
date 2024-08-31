@@ -118,7 +118,8 @@ const imageData: Array<ImageResource> = [
     imgVariants: [persona, personaVideo],
     title: 'Persona!',
     artist: 'Multiple Artist',
-    description: 'Taking the original image by suamingVT, Seedy and a friend did some editing and voila'
+    description: 'Taking the original image by suamingVT, Seedy and a friend did some editing and voila',
+    type: 'video'
   },
   {
     img: melsDio,
@@ -140,7 +141,8 @@ const imageData: Array<ImageResource> = [
     imgVariants: [animatedSundae],
     title: 'Animated Sundae',
     artist: '@Makishupy',
-    artistWebsite: 'https://x.com/Makishupy'
+    artistWebsite: 'https://x.com/Makishupy',
+    type: 'video'
   }
 ];
 
