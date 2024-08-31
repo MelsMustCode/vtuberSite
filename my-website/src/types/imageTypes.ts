@@ -6,4 +6,6 @@ export interface ImageResource {
   artist: string;
   artistWebsite?: string;
   description?: string;
+  cols?: number;
+  rows?: number;
 }
