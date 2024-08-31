@@ -23,7 +23,6 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 export default function TitlebarImageList() {
   
   const [currentImage, setCurrentImage] = useState<ImageResource|null>(null);
-
   const [hoveredIndex, setHoveredIndex] = React.useState(null);
 
   const handleMouseEnter = (index) => setHoveredIndex(index);
@@ -48,11 +47,12 @@ export default function TitlebarImageList() {
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
-            <img
+            { !item.img.includes('mp4') && <img
               {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
-            />
+            />}
+            { item.img.includes('mp4') && <video autoPlay src={item.img} type="video/mp4"  />}
             <ImageListItemBar
               title={item.title}
               subtitle={<Link href={item.artistWebsite}>{item.artist}</Link>}
