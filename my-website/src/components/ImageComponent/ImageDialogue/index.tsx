@@ -48,11 +48,14 @@ export const ImageDetailsDialog = ({
         <Box>
           <Carousel
             responsive={responsive}
-            ssr
-            showDots
+            // ssr
+            // showDots
+            autoPlay
+            autoPlaySpeed={1000}
             infinite
             containerClass="container-with-dots"
             itemClass="image-item"
+            slidesToSlide={1}
           >
             {image.imgVariants.map((i) => {
               return <img src={i} />;
