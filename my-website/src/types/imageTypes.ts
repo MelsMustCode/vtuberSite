@@ -1,7 +1,7 @@
 
 export interface ImageResource {
-  img: File;
-  imgVariants: File[];
+  img: string;
+  imgVariants: string[];
   title: string;
   artist: string;
   artistWebsite?: string;

@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
 import { itemData } from './helper'
-import { ImageResource } from '../types/imageTypes';
+import { ImageResource } from '../../types/imageTypes';
 import { ImageDetailsDialog } from '../ImageDialogue';
 import Link from '@docusaurus/Link';
 

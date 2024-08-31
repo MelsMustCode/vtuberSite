@@ -1,15 +1,15 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import { LandingPage } from '../components/LandingPage';
+import TitlebarImageList from '@site/src/components/ImageList';
 
-export default function Home(): JSX.Element {
+export default function ArtShowcase(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Home | ${siteConfig.title}`}
+      title={`Art Showcase | ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <main>
-        <LandingPage />
+        <TitlebarImageList />
       </main>
     </Layout>
   );
