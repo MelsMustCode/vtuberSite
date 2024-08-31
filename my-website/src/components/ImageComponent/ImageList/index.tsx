@@ -31,7 +31,7 @@ export default function TitlebarImageList() {
   return (
     <>
       {currentImage ? <ImageDetailsDialog image={currentImage} onClose={() => setCurrentImage(null)}/> : <></>}
-      <ImageList cols={4} sx={{ width: '100%', height: '100%', overflow: "hidden"
+      <ImageList cols={3} sx={{ width: '100%', height: '100%', overflow: "hidden"
       }}>
         {imageData.map((item, index) => (
           <ImageListItem 

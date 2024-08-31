@@ -50,20 +50,20 @@ const imageData: Array<ImageResource> = [
     artistWebsite: 'https://x.com/suamingVT'
   },
   {
-    img: falling,
-    imgVariants: [falling],
-    title: 'Falling for Ice Cream',
-    artist: '@Makishupy',
-    artistWebsite: 'https://x.com/Makishupy',
-    cols: 2
-  },
-  {
     img: scuffGrem,
     imgVariants: [scuffGrem, scuffGremTalk],
     title: 'Scuff Gremlin',
     artist: '@KINGBumby',
     artistWebsite: 'https://x.com/KINGBumby',
     description: 'This is an example of a description text',
+  },
+  {
+    img: falling,
+    imgVariants: [falling],
+    title: 'Falling for Ice Cream',
+    artist: '@Makishupy',
+    artistWebsite: 'https://x.com/Makishupy',
+    cols: 2
   },
   {
     img: fourPanel,
