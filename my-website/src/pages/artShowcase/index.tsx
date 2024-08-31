@@ -1,6 +1,6 @@
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import TitlebarImageList from '@site/src/components/ImageList';
+import TitlebarImageList from '@site/src/components/ImageComponent/ImageList';
 
 export default function ArtShowcase(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();

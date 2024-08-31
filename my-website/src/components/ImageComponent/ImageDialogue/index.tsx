@@ -1,6 +1,6 @@
 
 import { Dialog, DialogContent, DialogContentText, DialogTitle } from "@mui/material"
-import { ImageResource } from "../types/imageTypes"
+import { ImageResource } from "../../../types/imageTypes"
 
 interface ImageDetailsDialogProps {
     image: ImageResource;
