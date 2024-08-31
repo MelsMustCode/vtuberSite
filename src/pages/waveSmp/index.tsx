@@ -1,17 +1,25 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
+import clsx from "clsx";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Layout from "@theme/Layout";
+import { Box } from "@mui/material";
+import styles from "../LandingPage/index.module.css";
 
-export default function ArtShowcase(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+export default function WaveSMPLandingPage(): JSX.Element {
+  const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`WaveSMP | ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <main>
-        {/* <WaveSMPLandingPage /> */}
-      </main>
+    <Layout>
+      <header className={clsx("hero", styles.heroBanner)}>
+        <div className="container">
+          <h1 className="hero__title">{'WaveSMP'}</h1>
+          <Box sx={{ display: "flex" }}>
+            <Box m="auto">
+              <img src="waveSMP/gazing.png" loading="lazy" />
+            </Box>
+          </Box>
+          <p className="hero__subtitle">{'A collaborative Minecraft experience'}</p>
+        </div>
+      </header>
     </Layout>
   );
 }
