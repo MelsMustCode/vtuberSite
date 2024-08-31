@@ -44,7 +44,8 @@ export const itemData = [
     imgVariants: [falling],
     title: 'Falling for Ice Cream',
     artist: '@Makishupy',
-    artistWebsite: 'https://x.com/Makishupy'
+    artistWebsite: 'https://x.com/Makishupy',
+    cols: 2
   },
   {
     img: scuffGrem,

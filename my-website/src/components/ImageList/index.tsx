@@ -10,18 +10,46 @@ import { ImageResource } from '../types/imageTypes';
 import { ImageDetailsDialog } from '../ImageDialogue';
 import Link from '@docusaurus/Link';
 
+function srcset(image: string, size: number, rows = 1, cols = 1) {
+  return {
+    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
+    srcSet: `${image}?w=${size * cols}&h=${
+      size * rows
+    }&fit=crop&auto=format&dpr=2 2x`,
+  };
+}
+
+
 export default function TitlebarImageList() {
+  
   const [currentImage, setCurrentImage] = useState<ImageResource|null>(null);
 
+  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+
+  const handleMouseEnter = (index) => setHoveredIndex(index);
+  const handleMouseLeave = () => setHoveredIndex(null);
+
   return (
-    <div>
+    <>
       {currentImage ? <ImageDetailsDialog image={currentImage} onClose={() => setCurrentImage(null)}/> : <></>}
-      <ImageList cols={3} sx={{ width: "100%", height: "100%" }}>
-        {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+      <ImageList cols={4} sx={{ width: '100%', height: '100%', overflow: "hidden"
+      }}>
+        {itemData.map((item, index) => (
+          <ImageListItem 
+            key={index}
+            style={{
+              margin: "12px",
+              transition: "transform 0.3s ease-in-out",
+              transform: hoveredIndex === index ? "scale(1.1)" : "scale(1)",
+              zIndex: hoveredIndex === index ? 10 : 1
+            }  
+            }
+            cols={item.cols || 1} rows={item.rows || 1}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={handleMouseLeave}
+          >
             <img
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.img}?w=248&fit=crop&auto=format`}
+              {...srcset(item.img, 121, item.rows, item.cols)}
               alt={item.title}
               loading="lazy"
             />
@@ -41,7 +69,9 @@ export default function TitlebarImageList() {
           </ImageListItem>
         ))}
       </ImageList>
-    </div>
-  );
+    </>
+    
+  );
+
 }
 
