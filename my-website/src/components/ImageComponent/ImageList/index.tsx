@@ -5,8 +5,8 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
-import { imageData } from '../../utils/data'
-import { ImageResource } from '../../types/imageTypes';
+import { imageData } from '../../../data/data'
+import { ImageResource } from '../../../types/imageTypes';
 import { ImageDetailsDialog } from '../ImageDialogue';
 import Link from '@docusaurus/Link';
 
