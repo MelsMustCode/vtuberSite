@@ -7,7 +7,6 @@ import {
 } from "@mui/material";
 import { ImageResource } from "../../../types/imageTypes";
 import Carousel from "react-multi-carousel";
-import useBaseUrl from "@docusaurus/useBaseUrl";
 
 interface ImageDetailsDialogProps {
   image: ImageResource;
@@ -46,23 +45,22 @@ export const ImageDetailsDialog = ({
     <Dialog open={image ? true : false} onClose={handleClose}>
       <DialogTitle>{image.title}</DialogTitle>
       <DialogContent>
-          <Box>
-            <Carousel responsive={responsive}>
-              {image.imgVariants ?? image.imgVariants.forEach((i) => (
-                // <img
-                //   srcSet={`${i}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                //   src={`${i}?w=248&fit=crop&auto=format`}
-                //   loading="lazy"
-                // />
-                <img 
-                  src={useBaseUrl(i)}
-                  loading="lazy"
-                />
-              ))}
-            </Carousel>
-            <DialogContentText>{image.description}</DialogContentText>
-          </Box>
-        </DialogContent>
+        <Box>
+          <Carousel
+            responsive={responsive}
+            ssr
+            showDots
+            infinite
+            containerClass="container-with-dots"
+            itemClass="image-item"
+          >
+            {image.imgVariants.map((i) => {
+              return <img src={i} />;
+            })}
+          </Carousel>
+          <DialogContentText>{image.description}</DialogContentText>
+        </Box>
+      </DialogContent>
     </Dialog>
   );
 };
