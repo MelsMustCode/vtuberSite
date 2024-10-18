@@ -3,6 +3,8 @@ import { ImageResource } from '../types/imageTypes.js';
 /* CrManzana */
 const fourPanel = 'Images/CrManzana/SPOILER_xolomon4k.png';
 const fourPanelSketch = 'Images/CrManzana/SPOILER_qST2l2_0.jpg';
+/* franbolt */
+const melsDio = 'Images/franbolt/SPOILER_2.png';
 /* funayfunay */
 const reactive = 'Images/funayfunay/melscomm_IDLE.png';
 const reactiveTalk = 'Images/funayfunay/melscomm_TALK.png';
@@ -12,27 +14,27 @@ const scuffGremTalk = 'Images/KingBumby/scuffgremlin_melsmustscream_talk_open.pn
 /* KingofDawn0 */
 const sakuraMels = 'Images/KingofDawn0/background.PNG';
 const sakuraMelsNoBackground = 'Images/KingofDawn0/no_background.PNG';
+/* kyung.mp3 */
+const chibiTrio = 'Images/kyung_mp3/chibiTrio.png';
 /* Makishupy */
 const falling = 'Images/Makishupy/whatsAppImage.jpeg';
 const originalModel = 'Images/Makishupy/closed_IMG_2370.png';
 const originalModelOpenMouth = 'Images/Makishupy/open_IMG_2371.png';
 const animatedSundae = 'Images/Makishupy/Ice_cream_Animation.mp4';
-/* suamingVT */
-const kaguraMels = 'Images/suamingVT/mel_kagura_bachi.png';
-/* WaNN */
-const tangoWithSol = 'Images/WaNN/Sol_and_Mel.png';
-const tangoWithSolChibi = 'Images/WaNN/Sol_and_Mel_chibi.png';
-/* tuliblu */
-const chibi = 'Images/tuliblu/Xolo_2.png';
 /* MelsMustScream */
 const dawnling = 'Images/MelsMustScream/Dawnling.png';
 const persona = 'Images/MelsMustScream/shenanigans.png';
 const personaVideo = 'Images/MelsMustScream/persona5_v1.mp4';
-const sundae = 'Images/MelsMustScream/1112.png'
-/* kyung.mp3 */
-const chibiTrio = 'Images/kyung_mp3/chibiTrio.png';
-/* franbolt */
-const melsDio = 'Images/franbolt/SPOILER_2.png'
+const sundae = 'Images/MelsMustScream/1112.png';
+/* Ojanul */
+const techIceCreamMels = 'Images/Ojanul/Mels_Base_Transparent-1.png';
+/* suamingVT */
+const kaguraMels = 'Images/suamingVT/mel_kagura_bachi.png';
+/* tuliblu */
+const chibi = 'Images/tuliblu/Xolo_2.png';
+/* WaNN */
+const tangoWithSol = 'Images/WaNN/Sol_and_Mel.png';
+const tangoWithSolChibi = 'Images/WaNN/Sol_and_Mel_chibi.png';
 
 const imageData: Array<ImageResource> = [
   {
@@ -90,7 +92,7 @@ const imageData: Array<ImageResource> = [
     img: chibiTrio,
     imgVariants: [chibiTrio],
     title: 'Trio Shenanigans',
-    artist: 'kyung.mp3',
+    artist: '@kyung.mp3',
     artistWebsite: 'https://www.instagram.com/kyung.mp3/',
   },
   {
