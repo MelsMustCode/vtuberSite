@@ -93,7 +93,26 @@ const config: Config = {
         {
           to: '/wavesmp',
           label: 'WaveSMP',
-          position: 'left'
+          position: 'left',
+          type: 'dropdown',
+          items: [
+           {
+            to: '/wavesmp/wave1',
+            label: 'Wave 1'
+           },
+           {
+            to: '/wavesmp/wave2',
+            label: 'Wave 2'
+           },
+           {
+            to: '/wavesmp/wave3',
+            label: 'Wave 3'
+           },
+           {
+            to: '/wavesmp/wave4',
+            label: 'Wave 4'
+           }
+          ]
         }
       ],
     },
